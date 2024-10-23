@@ -5,9 +5,6 @@ import 'package:petstagram_practice/home/community_page.dart';
 import 'home_screen.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-
   runApp(const MyApp());
 }
 
@@ -21,7 +18,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
-        '/login': (context) => const LoginPhonePage(),
       },
     );
   }
